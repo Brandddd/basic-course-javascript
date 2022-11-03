@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">                                                                   <!--Codificacion de caracteres Utilizada-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">                   <!--Responsive page-->
+        <title>Cadenas de Texto</title>
+    </head>
+
+    <body>                                                                                       <!--Contenido Documento HTML-->
+        <h1>Fundamentos JS:</h1>
+        <script>
+            //Cadenas de texto Strings:
+            let nombre = 'Brandon';
+            let apellido = 'Alvarez';
+            let saludo = new String("Hola buenas tardes")
+            let charles = 'Aprende como si fueras a vivir toda la vida y vive como si fueras a morir mañana.'
+            console.log(saludo, nombre, apellido);
+            console.log(saludo.length, nombre.length, apellido.length);
+            console.log(
+                nombre.toLocaleUpperCase(), 
+                apellido.toLocaleUpperCase(),
+                charles.includes("vida"),
+                );
+            //****************Concatenacion*******************
+            let saludoConcatenando = 'Hola, mi nombre es ' + nombre + ' ' + apellido + '.';
+            console.log(saludoConcatenando);
+            //****************Interpolacion*******************
+            //Template String: (Con backstick)
+            let saludoTemplate = `Hola, mi nombre es ${nombre} ${apellido}.`;
+            console.log(saludoTemplate);
+
+        </script>
+    </body>
+</html>

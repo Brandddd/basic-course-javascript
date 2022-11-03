@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">                                                                   <!--Codificacion de caracteres Utilizada-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">                   <!--Responsive page-->
+        <title>Funciones</title>
+    </head>
+
+    <body>                                                                                       <!--Contenido Documento HTML-->
+        <h1>Fundamentos JS:</h1>
+        <script>
+            //Declaracion de funciones:
+            function estoEsUnaFuncion(){
+                console.log("Uno.");
+                console.log("Dos.");
+                console.log("Tres.");
+            }
+
+            function unaFuncionQueDevuelveValor(){
+                return `Hola, soy una funcion que retorna una cadena de texto. `; //Ignora las siguietes lineas de codigo dentro de la funcion al encontrar return
+            }
+
+            
+            function saludar(nombre = 'No definido', edad = 0){
+                console.log(`Hola, mi nombre es ${nombre} y tengo ${edad} años.`);
+            }
+
+            //Invocando la funcion:
+            estoEsUnaFuncion();
+            //Invocando funcion que retorna algo con return:
+            let valorFuncion = unaFuncionQueDevuelveValor(); //Se necesita la variable para poder tomar el return de la funcion.
+            console.log(valorFuncion);
+            //Invocando funcion que recibe parametros:
+            saludar('Brandon', 23);
+            saludar()   //Sin enviar valores...
+        </script>
+    </body>
+</html>

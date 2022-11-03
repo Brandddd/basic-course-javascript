@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">                                                                   <!--Codificacion de caracteres Utilizada-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">                   <!--Responsive page-->
+        <title>Tipos de Variables</title>
+    </head>
+
+    <body>                                                                                       <!--Contenido Documento HTML-->
+        <h1>Fundamentos JS:</h1>
+        <script>
+            var hola = "Hola Mundo";
+            let hello = "Hello World";
+            console.log(hola);
+            console.log(hello);
+            console.log(window);
+            console.log(window.hola);
+            console.log(window.hello);
+            console.log("********************var************************")
+            //Ambito de bloque:
+            var tipovar = "Hola que tal, soy una variable tipo Var";
+            console.log("Variable var antes del Bloque -> ", tipovar);
+            //Esto es un bloque:
+            {
+                var tipovar = "Hola que tal, soy una variable tipo var, dentro de un bloque. Salu2";
+                console.log("Variable var dentro del bloque -> ", tipovar);
+            }
+            console.log("Variable var despues del bloque -> ", tipovar);
+            console.log("********************let************************")
+            //Ambito de bloque:
+            let tipolet = "Hola que tal, soy una variable tipo let";
+            console.log("Variable let antes del Bloque -> ", tipolet);
+            //Esto es un bloque:
+            {
+                let tipolet = "Hola que tal, soy una variable tipo let, dentro de un bloque. Salu2";
+                console.log("Variable let dentro del bloque -> ", tipolet);
+            }
+            console.log("Variable let despues del bloque -> ", tipolet);
+        </script>
+    </body>
+</html>
